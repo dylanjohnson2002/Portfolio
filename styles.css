@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header p {
+    margin-bottom: 10px;
+}
+
+.profile-img {
+    width: 300px;
+    height: auto;
+}
+
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f8f9fa;
+}
+
