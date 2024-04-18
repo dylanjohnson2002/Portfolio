@@ -1,26 +1,120 @@
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-section {
+    position: relative;
+    text-align: center;
+    height: 250px;
+    /* Adjust this value to change the height of your header */
+    overflow: hidden;
+}
+
+.header-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the header area */
+}
+
+.profile-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    /* Adjust width as necessary */
+    height: 150px;
+    /* Adjust height as necessary */
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #e6e6e6;
 }
 
-header p {
-    margin-bottom: 10px;
+.Alaska {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    margin: 0 auto;
 }
 
-.profile-img {
-    width: 300px;
+
+/* Header Styles */
+.header-image img {
+    width: 100%;
     height: auto;
 }
 
-
-.container {
-    margin-top: 20px;
-    margin-bottom: 20px;
+/* Navigation Tabs Container */
+.tabs-container {
+    background-color: #f4f4f4;
+    padding: 0.5rem 0;
 }
 
+/* Navigation Tabs */
+.nav-tabs .nav-link {
+    border: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+    background-color: #ddd;
+    border: none;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #ff8c00;
+    color: white;
+}
+
+/* Tab Content */
+.tab-content.bubble-section {
+    background: white;
+    padding: 2rem;
+    margin-top: -1rem;
+    /* Overlap the tab content with the tabs */
+    border-radius: 0.5rem;
+    /* Rounded corners for the content area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+/* Sections in About Me Tab */
+#about section {
+    margin-bottom: 1rem;
+}
+
+/* Footer Styles */
 footer {
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #f8f9fa;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
 }
 
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .tab-content.bubble-section {
+        margin: 0.5rem;
+        padding: 1rem;
+        border-radius: 15px;
+    }
+}
